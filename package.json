@@ -37,5 +37,10 @@
     "eslint-plugin-mocha": "^4.8.0",
     "eslint-plugin-react": "^6.10.0",
     "jest": "^19.0.2"
+  },
+  "dependencies": {
+    "graceful-fs": "^4.1.11",
+    "js-yaml": "^3.8.2",
+    "mkdirp": "^0.5.1"
   }
 }
