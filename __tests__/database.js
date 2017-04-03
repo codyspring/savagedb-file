@@ -11,11 +11,9 @@ describe('::Database', () => {
   });
 
   describe('#create()', () => {
-    it('should create a directory', (done) => {
-      Database.create(name, location).then(() => {
-        expect(fs.readdirSync(location)[0]).toEqual(name);
-        done();
-      });
+    it('should create a directory', () => {
+      Database.create(name, location);
+      expect(fs.readdirSync(location)[0]).toEqual(name);
     });
   });
 

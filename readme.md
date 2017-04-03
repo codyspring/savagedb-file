@@ -21,7 +21,7 @@ const db = SavageDB('myDb', {
 - ``location`` is the path to a directory on this machine.
 - ``fileType`` is the desired filetype for documents. json and yaml are supported.
 
-Otherwise, it works as expected to persist files in the background. Persistence is asyncronous and
+Otherwise, it works as expected to persist files in the background. Persistence is asynchronous and
 runs off of events fired by SavageDB.
 
 ## NOTES
@@ -29,6 +29,8 @@ Currently, errors are not thrown if something goes wrong with some save/delete. 
 as persisting the SavageDB database is a background task and never interacts directly with the
 primary operations of the database. As an example: ``collection.insert(data)`` never assumes
 anything to be in the way of it's in-memory processing; therefore it isn't a promise.
+
+Also, there's no way to load the data back in as of yet. This is a next-in-line feature.
 
 ## License
 MIT
