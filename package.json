@@ -24,6 +24,10 @@
     "url": "https://github.com/playsavage/savagedb-persist-file-local/issues"
   },
   "homepage": "https://github.com/playsavage/savagedb-persist-file-local#readme",
+  "engineStrict": true,
+  "engines": {
+    "node": ">6.0.0"
+  },
   "devDependencies": {
     "coveralls": "^2.13.0",
     "eslint": "^3.17.1",
