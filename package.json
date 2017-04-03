@@ -1,0 +1,37 @@
+{
+  "name": "savagedb-persist-file-local",
+  "version": "0.0.0",
+  "description": "Local file persistence module for SavageDB.",
+  "main": "source/index.js",
+  "scripts": {
+    "test": "jest",
+    "cover": "jest --coverage",
+    "coveralls": "npm run cover -- && cat ./coverage/lcov.info | coveralls"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/playsavage/savagedb-persist-file-local.git"
+  },
+  "keywords": [
+    "savagedb",
+    "persistence",
+    "local",
+    "file"
+  ],
+  "author": "Cody Spring <codyspring@me.com> (https://codyspring.com)",
+  "license": "MIT",
+  "bugs": {
+    "url": "https://github.com/playsavage/savagedb-persist-file-local/issues"
+  },
+  "homepage": "https://github.com/playsavage/savagedb-persist-file-local#readme",
+  "devDependencies": {
+    "coveralls": "^2.13.0",
+    "eslint": "^3.17.1",
+    "eslint-config-airbnb": "^14.1.0",
+    "eslint-plugin-import": "^2.2.0",
+    "eslint-plugin-jsx-a11y": "^4.0.0",
+    "eslint-plugin-mocha": "^4.8.0",
+    "eslint-plugin-react": "^6.10.0",
+    "jest": "^19.0.2",
+  }
+}
