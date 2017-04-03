@@ -1,5 +1,5 @@
 {
-  "name": "savagedb-persist-file-local",
+  "name": "@playsavage/savagedb-persist-file-local",
   "version": "0.1.0",
   "description": "Local file persistence module for SavageDB.",
   "main": "source/index.js",
