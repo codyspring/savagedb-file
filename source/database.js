@@ -1,8 +1,8 @@
 const mkdirp = require('mkdirp');
 
-const Create = (name, location) => new Promise((pass) => {
-  mkdirp(`${location}/${name}`, () => pass());
-});
+const Create = (name, location) => {
+  mkdirp.sync(`${location}/${name}`);
+};
 
 module.exports = {
   create: Create

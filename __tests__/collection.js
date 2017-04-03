@@ -11,11 +11,9 @@ describe('::Collection', () => {
   });
 
   describe('#create()', () => {
-    it('should create a directory', (done) => {
-      Collection.create(name, location).then(() => {
-        expect(fs.readdirSync(location)[0]).toEqual(name);
-        done();
-      });
+    it('should create a directory', () => {
+      Collection.create(name, location);
+      expect(fs.readdirSync(location)[0]).toEqual(name);
     });
   });
 
