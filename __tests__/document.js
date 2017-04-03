@@ -1,5 +1,6 @@
 const mkdirp = require('mkdirp');
 const fs = require('graceful-fs');
+const yaml = require('js-yaml');
 const Document = require('../source/document');
 
 const location = './data-test/document';
@@ -18,6 +19,15 @@ describe('::Document', () => {
         done();
       });
     });
+
+    it('should save yaml when specified', (done) => {
+      Document.save(data, location, 'yaml').then(() => {
+        const doc = yaml.safeLoad(fs.readFileSync(`${location}/foo.yaml`));
+        expect(doc).toEqual(data);
+        fs.unlinkSync(`${location}/foo.yaml`);
+        done();
+      });
+    });
   });
 
   describe('#delete()', () => {
@@ -30,7 +40,7 @@ describe('::Document', () => {
   });
 
   afterAll(() => {
-    fs.rmdirSync(location);
-    fs.rmdirSync('./data-test');
+    // fs.rmdirSync(location);
+    // fs.rmdirSync('./data-test');
   });
 });
