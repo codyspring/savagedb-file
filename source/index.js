@@ -21,7 +21,7 @@ module.exports = options => (database) => {
     });
 
     database.collections[name].subject('document-deleted').subscribe((id) => {
-      Document.delete(id, location);
+      Document.delete(id, location, options.fileType);
     });
   });
 };
