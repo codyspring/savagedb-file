@@ -1,7 +1,11 @@
 {
   "extends": "airbnb",
+  "plugins": [
+    "jest"
+  ],
   "env": {
-    "node": true
+    "node": true,
+    "jest/globals": true
   },
   "rules": {
     "comma-dangle": 0
