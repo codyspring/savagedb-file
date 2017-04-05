@@ -5,6 +5,7 @@ const Document = require('./document');
 module.exports = options => (database) => {
   // Once SavageDB tells us to persist a database, create it with the name we get.
   Database.create(database.name, options.location);
+  Database.load(database, options.location, options.fileType);
 
   // When SavageDB emits a collection, create it and subscribe to document events.
   database.subject('collection-created').subscribe((name) => {
