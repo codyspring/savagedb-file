@@ -30,7 +30,5 @@ as persisting the SavageDB database is a background task and never interacts dir
 primary operations of the database. As an example: ``collection.insert(data)`` never assumes
 anything to be in the way of it's in-memory processing; therefore it isn't a promise.
 
-Also, there's no way to load the data back in as of yet. This is a next-in-line feature.
-
 ## License
 MIT
