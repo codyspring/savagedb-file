@@ -4,7 +4,7 @@
   "description": "Local file persistence module for SavageDB.",
   "main": "source/index.js",
   "scripts": {
-    "test": "jest"
+    "test": "standard && jest"
   },
   "repository": {
     "type": "git",
