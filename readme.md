@@ -3,8 +3,8 @@ Plugin module to persist files locally with SavageDB.
 
 ## Usage
 ```JavaScript
-const SavageDB = require('@playsavage/savagedb');
-const localPersist = require('@playsavage/savagedb-persist-file-local');
+const SavageDB = require('savagedb');
+const localPersist = require('savagedb-file');
 const db = SavageDB('myDb', {
   persist: localPersist({
     location: './data',

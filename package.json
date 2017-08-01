@@ -1,6 +1,6 @@
 {
   "name": "savagedb-file",
-  "version": "0.3.0",
+  "version": "0.3.1",
   "description": "Local file persistence module for SavageDB.",
   "main": "source/index.js",
   "scripts": {
