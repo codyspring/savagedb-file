@@ -4,7 +4,7 @@
   "description": "Local file persistence module for SavageDB.",
   "main": "source/index.js",
   "scripts": {
-    "test": "jest"
+    "test": "standard && jest"
   },
   "repository": {
     "type": "git",
@@ -26,15 +26,19 @@
   "engines": {
     "node": ">6.0.0"
   },
+  "standard": {
+    "globals": [
+      "jest",
+      "describe",
+      "it",
+      "expect",
+      "beforeAll",
+      "afterAll"
+    ]
+  },
   "devDependencies": {
-    "coveralls": "^2.13.0",
-    "eslint": "^3.17.1",
-    "eslint-config-airbnb": "^14.1.0",
-    "eslint-plugin-import": "^2.2.0",
-    "eslint-plugin-jest": "^19.0.1",
-    "eslint-plugin-jsx-a11y": "^4.0.0",
-    "eslint-plugin-react": "^6.10.0",
-    "jest": "^19.0.2"
+    "jest": "^19.0.2",
+    "standard": "^10.0.2"
   },
   "dependencies": {
     "graceful-fs": "^4.1.11",
