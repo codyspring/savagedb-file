@@ -26,6 +26,16 @@
   "engines": {
     "node": ">6.0.0"
   },
+  "standard": {
+    "globals": [
+      "jest",
+      "describe",
+      "it",
+      "expect",
+      "beforeAll",
+      "afterAll"
+    ]
+  },
   "devDependencies": {
     "jest": "^19.0.2",
     "standard": "^10.0.2"
